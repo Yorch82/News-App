@@ -1,0 +1,19 @@
+@import "../../colors";
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    background-color: $black-color;
+    color:$primary-color;
+    padding: 10px;
+    div{
+        display: flex;
+        gap: 10px;
+        span{
+            a{
+                all: unset;
+                cursor: pointer;
+            }
+        }
+    }
+}
