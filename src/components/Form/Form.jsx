@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import './Form.scss'
+import './Form.scss'
 import { useNavigate } from "react-router-dom";
 
 export const Form = () => {
@@ -48,33 +48,38 @@ export const Form = () => {
     };
   
   return (
-    <form className="formulario" onSubmit={handleSubmit}>
-        <fieldset>
-            <legend>Rellena todos los campos</legend>
-            <div>
-                <div className="entrada">
-                    <label>Nombre</label>
-                    <input className="datos" type="text" placeholder="Su nombre aquí..." onChange={handleInputChange} name="name"/>
-                </div>
-                <div className="entrada">
-                    <label>Teléfono</label>
-                    <input className="datos" type="text" placeholder="Su teléfono aquí..." onChange={handleInputChange} name="phone"/>
-                </div>
-                <div className="entrada">
-                    <label>Correo</label>
-                    <input className="datos" type="email" placeholder="Su correo electrónico aquí..." onChange={handleInputChange} name="email"/>
-                </div>
-                <div className="entrada">
-                    <label>Mensaje</label>
-                    <textarea  className="datos" placeholder="Escriba aquí su consulta..." name="text"></textarea>
-                </div>
-            </div>
-            <div>
-                <button className="boton" type="submit" disabled={btnDisabled}>Enviar</button>{message}
-            </div>
-        </fieldset>
+    <div className="form-container">
+      <form className="form" onSubmit={handleSubmit}>
         
+            <h2>CONTACT US</h2>
+            <div>
+                <div className="entrada">
+                    <label>Name:</label>
+                    <input className="datos" type="text" placeholder="Write your name here..." onChange={handleInputChange} name="name"/>
+                </div>
+                <div className="entrada">
+                    <label>Phone:</label>
+                    <input className="datos" type="text" placeholder="Write your phone here..." onChange={handleInputChange} name="phone"/>
+                </div>
+                <div className="entrada">
+                    <label>Email:</label>
+                    <input className="datos" type="email" placeholder="Let us know how to contact you back.." onChange={handleInputChange} name="email"/>
+                </div>
+                <div className="entrada">
+                    <label>Message:</label>
+                    <input  className="datos" placeholder="What would you like to tell us.." name="text"></input>
+                </div>
+            </div>
+            <div>
+                <button className="boton" type="submit" disabled={btnDisabled}>Send Message</button>{message}
+            </div>
+            {/* <div className="bottom">
+              <span class="fa fa-phone"></span>123 45 67 89
+              <span class="fa fa-envelope-o"></span> Yorch@gmail.com
+            </div> */}
     </form>
+    </div>
+    
   );
 };
 

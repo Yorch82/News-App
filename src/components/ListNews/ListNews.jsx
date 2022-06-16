@@ -9,21 +9,26 @@ function ListNews() {
     getNews();
   }, []);
   const noticia = news.map((noticia) => {
-    // const imagen = noticia.media[0]["media-metadata"][0].url
-    // console.log(noticia.media[0])
-    // console.log(imagen)
     return (
       <div key={noticia.id}>
-        <h1>{noticia.title}</h1>
-        <p>{noticia.abstract}</p>
-        <p>{noticia.byline}. Published on {noticia.published_date}</p>
-        <a href={noticia.url}>Enlace a noticia</a>
-        {noticia.media.length !== 0 ? <img src={noticia.media[0]["media-metadata"][2].url} alt="imagen" /> : null}
+        <article className="card shadow">
+          <div>
+          {noticia.media.length !== 0 ?<img src={noticia.media[0]["media-metadata"][2].url} alt="imagen"/> :null}
+          </div>
+          <div>
+            <p><strong>{noticia.title}</strong></p>
+            <p>{noticia.abstract}</p>
+          <span className="boton">            
+            <p>{noticia.byline}.</p>
+            <a className="button-85"  href={noticia.url}>Noticia completa...</a>
+            </span>
+          </div>
+      </article>       
       </div>
     );
   });
   return (
-    <div>{noticia}</div>
+    <div className="container">{noticia}</div>
   )
 }
 

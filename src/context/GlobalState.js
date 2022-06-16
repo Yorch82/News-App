@@ -27,6 +27,6 @@ export const GlobalProvider = ({ children }) => {
       }}
     >
       {children} {/* children son mis componentes hijos */}
-    </GlobalContext.Provider>
+    </GlobalContext.Provider>    
   );
 };
