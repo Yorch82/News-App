@@ -18,9 +18,9 @@ function ListNews() {
           <div>
             <p><strong>{noticia.title}</strong></p>
             <p>{noticia.abstract}</p>
-          <span className="boton">            
-            <p>{noticia.byline}.</p>
-            <a className="button-85"  href={noticia.url}>Noticia completa...</a>
+            <span className="boton">            
+              <p>{noticia.byline}.</p>
+              <a className="button-85"  href={noticia.url}>Link to article</a>
             </span>
           </div>
       </article>       

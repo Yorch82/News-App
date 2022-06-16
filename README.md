@@ -1,70 +1,125 @@
-# Getting Started with Create React App
+<!-- LOGO -->
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img width="400" height="240" src='./src/assets/nyt.jpg'>
+</p>
 
-## Available Scripts
+<!-- INDICE -->
+<details>
+  <summary>Indice</summary>
+  <ol>
+    <li>
+      <a href="#introduccion">Introducción</a>
+      <ul>
+        <li><a href="#hecho-con">Tecnologías</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#descripción-del-proyecto">Descripción del proyecto</a>
+      <ul>
+        <li><a href="#instalación">Instalación</a></li>
+      </ul>
+    </li>
+    <li><a href="#endpoints">Endpoints</a></li>
+    <li><a href="#licencia">Licencia</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="#conocimientos">Conocimientos</a></li>
+  </ol>
+</details>
 
-In the project directory, you can run:
+<!-- SOBRE EL PROYECTO -->
 
-### `npm start`
+## Introducción
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React es una librería de JavaScript que facilita la creación de interfaces de usuario interactivas. Es una biblioteca de código abierto construida por Facebook y es una de las bibliotecas más utilizadas para crear aplicaciones web.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tecnologías
 
-### `npm run build`
+Aquí presentamos las herramientas empleadas en este proyecto:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [SCSS](https://sass-lang.com/)
+- [React](https://es.reactjs.org/)
+- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- DESCRIPCION -->
 
-### `npm run eject`
+## Descripción
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+¿Cuáles son los principales objetivos de este proyecto?
+  -  Comprender cómo desarrollar una aplicación con React
+  -  Mejora tus habilidades de desarrollo web
+  -  Mejore sus habilidades de desarrollo de JavaScript
+  -  Aprender a usar Context
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Página de noticias
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Vamos a englobar todo lo visto estos días con un miniproyecto con React utilizando News API vista principal de la página
+Implementa React Router en tu página
+ - /home. Home de la app
+ - /form. Formulario para crear noticia
+ - /list. Lista detallada de noticias
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Componentes mínimos
+ - Header
+ - Home.
+ - Form.
+ - Formulario de alta de nueva noticia. 
+ - Guardar formulario en el local storage
+ - Tras dar de alta debes redirigir a ListNews
+ - ListNews. Pinta las noticias
+ - Footer
 
-## Learn More
+ - Importante el diseño
+ - Utilizar context
+ - Utilizar SASS
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Instalación
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Para la instalación de la aplicación has de clonarte el siguiente repositorio:
 
-### Analyzing the Bundle Size
+   ```sh
+   git clone https://github.com/Yorch82/News-App.git
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Tambien has de instalar las dependencias del proyecto:
+   ```sh
+   npm install
+   ```
 
-### Making a Progressive Web App
+4. Iniciar proyecto:
+    ```sh
+    npm start
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+<!-- ROADMAP -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Experiencia
 
-### Deployment
+- [x] Implementado context
+- [x] Componentes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+<!-- LICENCIA -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Licencia
+
+Este programa es de código abierto y puede ser utilizado por cualquier persona que lo desee.
+
+<!-- CONTACTO -->
+
+## Contacto
+
+Jorge - [gitHub](https://github.com/yorch82)
+
+<!-- CONCOCIMIENTOS -->
+
+## Conocimientos
+
+- [x] React
+- [x] SCSS
